@@ -1,13 +1,3 @@
-variable "vpc_name" {
-  
-}
-variable "project_id" {
-  
-}
-
-variable "routing_mode" {
-  default = "REGIONAL"
-}
 
 resource "google_compute_network" "default" {
   name = "${var.vpc_name}"
